@@ -1,0 +1,36 @@
+{
+  "name": "valoracion_opciones",
+  "version": "1.0.0",
+  "description": "Software developed to simulate financtial options on foreign stock markets.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luchoaraya30/Proyecto-ISW-Whome.git"
+  },
+  "keywords": [
+    "finance",
+    "browniang-movement",
+    "yahoo",
+    "stocks"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luchoaraya30/Proyecto-ISW-Whome/issues"
+  },
+  "homepage": "https://github.com/luchoaraya30/Proyecto-ISW-Whome#readme",
+  "devDependencies": {
+    "electron": "^1.8.4"
+  },
+  "dependencies": {
+    "hammer": "0.0.5",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.3.1",
+    "materialize": "^1.0.0",
+    "materialize-css": "^0.100.2",
+    "yahoo-finance": "^0.3.5"
+  }
+}
