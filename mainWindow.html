@@ -4,6 +4,7 @@
 <head>
   <title>Valoracion de Opciones</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -18,25 +19,67 @@
 
   <h1 class="center-align">Valoracion de Opciones</h1>
   <div class="row">
-    <h3 class="col s6 push-s1">Carga de Acrhivo</h3>
-    <h3 class="col s5 push-s1">Buscar en Listado</h3>
-  </div>
-  <div class="row">
-    <button class="btn col s3 push-s1" type="button" name="button">Subir Archivo</button>
-    <div class="input-field col s3 push-s4">
-      <select>
-        <option value="" disabled selected>Elige opcion a simular</option>
-        <option value="AAPL">APPLE INC.</option>
-        <option value="F">FORD MOTOR COMPANY</option>
-        <option value="GE">GENERAL ELECTRIC COMPANY</option>
-        <option value="TWX">TIME WARNER INC.</option>
-        <option value="SBUX">STARBUCKS CORPORATION</option>
-        <option value="BAC">BANK OF AMERICA CORPORATION</option>
-        <option value="ILG">ILG INC</option>
-      </select>
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s6"><a href="#test1">Carga desde Archivo</a></li>
+        <li class="tab col s6"><a class="active" href="#test2">Seleccion de listado</a></li>
+      </ul>
     </div>
-    <button class="btn col s1 push-s4" type="button" name="button">Simular</button>
+    <div id="test1" class="col s12">
+      <form action="#">
+        <div class="file-field input-field col s3 center">
+          <div class="btn">
+            <span>Archivo</span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+      </form>
+      <form class="col s12">
+
+        <div class="row">
+          <div class="input-field col s2">
+            <i class="material-icons prefix">show_chart</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Cantidad de Trayectorias</label>
+          </div>
+        </div>
+      </form>
+      <button class="btn col s1" type="button" name="button">Simular</button>
+
+    </div>
+    <div id="test2" class="col s12">
+      <div class="input-field col s3">
+        <select>
+         <option value="" disabled selected>Elige opcion a simular</option>
+         <option value="AAPL">APPLE INC.</option>
+         <option value="F">FORD MOTOR COMPANY</option>
+         <option value="GE">GENERAL ELECTRIC COMPANY</option>
+         <option value="TWX">TIME WARNER INC.</option>
+         <option value="SBUX">STARBUCKS CORPORATION</option>
+         <option value="BAC">BANK OF AMERICA CORPORATION</option>
+         <option value="ILG">ILG INC</option>
+       </select>
+      </div>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s2">
+              <i class="material-icons prefix">show_chart</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Cantidad de Trayectorias</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <button class="btn col s1" type="button" name="button">Simular</button>
+    </div>
+
+
   </div>
+
 </body>
 <script>
   // You can also require other files to run in this process
